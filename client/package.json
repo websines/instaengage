@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.1.1",
+    "@heroicons/react": "^1.0.1",
+    "axios": "^0.21.1",
+    "axios-auth-refresh": "^3.1.0",
+    "js-cookie": "^2.2.1",
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-user-avatar": "^1.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2"
+  }
+}
