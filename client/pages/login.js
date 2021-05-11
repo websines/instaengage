@@ -15,6 +15,7 @@ const Index = () => {
         });
         loginUser(payload)    
     };
+    console.log(process.env.BASE_URL)
     return (
         <section className="bg-white {-- h-screen --}">
             <div className="mx-auto flex justify-center h-full flex-col lg:flex-row">

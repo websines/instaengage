@@ -4,7 +4,7 @@ import authAxios from '../utils/axios'
 import axios from 'axios'
 import cookie from 'js-cookie';
 
-axios.defaults.baseURL = 'http://localhost:8080'
+axios.defaults.baseURL = process.env.API_URL
 
 let initialState = {
     user: null

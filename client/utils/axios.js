@@ -8,7 +8,7 @@ function getRefeshToken(){
 let r_data = {
     refresh_token: getRefeshToken()
 }
-const refreshAuthLogic = failedRequest => axios.post('http://localhost:8080/token/refresh', JSON.stringify(r_data)).then(tokenRefreshResponse => {
+const refreshAuthLogic = failedRequest => axios.post(`${process.env.API_URL}/token/refresh`, JSON.stringify(r_data)).then(tokenRefreshResponse => {
     cookie.remove('access_token')
     cookie.remove('refresh_token')
     cookie.set('access_token', tokenRefreshResponse.data.access_token);
@@ -20,7 +20,7 @@ const refreshAuthLogic = failedRequest => axios.post('http://localhost:8080/toke
 });
 
 const authAxios = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: process.env.API_URL,
 })
 
 function getToken(){
